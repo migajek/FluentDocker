@@ -434,7 +434,7 @@ namespace Ductus.FluentDocker.Commands
       if (!string.IsNullOrEmpty(altProjectName))
         args += $" -p {altProjectName}";
 
-      var options = noStart ? "--no-start" : "--detach";
+      var options = noStart ? "--no-start" : "-d";
 
       if (forceRecreate)
         options += " --force-recreate";
