@@ -1,5 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+      <Version>0.1</Version>
+    <PackageId>Ductus.FluentDocker.OldDockerCompose</PackageId>
+    <PackageDescription>This is a compatibility package to fix docker-compose execution on docker-compose 1.17 which is shipped by default in ubuntu bionic. 
+      Please use regular Ductus' package unless you're sure what you're doing!</PackageDescription>
+    
+    
     <TargetFrameworks Condition=" '$(OS)' != 'Unix' ">netstandard1.6;netstandard2.0;netstandard2.1;net461</TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' == 'Unix' ">netstandard1.6;netstandard2.0;netstandard2.1</TargetFrameworks>
     
