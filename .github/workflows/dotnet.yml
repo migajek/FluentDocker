@@ -26,6 +26,6 @@ jobs:
     - name: Publish  
       uses: brandedoutcast/publish-nuget@v2.5.2  
       with:   
-        PROJECT_FILE_PATH: Ductus.FluentDocker/Ductus.FluentDocker.csproj  
+        PROJECT_FILE_PATH: Ductus.FluentDocker/Ductus.FluentDocker.OldDockerCompose.csproj  
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
         PACKAGE_NAME: Ductus.FluentDocker.OldDockerCompose
